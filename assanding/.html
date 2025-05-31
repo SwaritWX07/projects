@@ -1,0 +1,25 @@
+<html>
+
+<body>
+
+
+    <button onclick="ascending()">ascending </button>
+  
+    <p id="result">
+
+    </p>
+    <script>
+        var a = [36, 0, 5526, 841, 92, 11, 586];
+        document.getElementById("result").innerHTML = a;
+        function ascending() {
+            a.sort(function (x, y) {
+                return x - y;
+            })
+            document.getElementById("result").innerHTML = a;
+        }
+       
+    </script>
+
+</body>
+
+</html>
