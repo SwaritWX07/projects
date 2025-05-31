@@ -1,0 +1,17 @@
+<html>
+
+<body>
+    <P id="message"></P>
+    <button onclick="alert('hello bro')">click here</button>
+    <script>
+        try {
+            alert("welcome");
+        }
+        catch (error) {
+            document.getElementById("message").innerHTML = error.message;
+        }
+
+    </script>
+</body>
+
+</html>
